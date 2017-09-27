@@ -1,0 +1,36 @@
+{
+  "consumer": {
+    "name": "CompreAquiExpress"
+  },
+  "provider": {
+    "name": "APIPago"
+  },
+  "interactions": [
+    {
+      "description": "una petición de un pago",
+      "providerState": "un pago existe",
+      "request": {
+        "method": "get",
+        "path": "/payments/1234",
+        "query": ""
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        },
+        "body": {
+          "id": 1234,
+          "valor": 224.25,
+          "direccionFactura": "Estadio Rodrigo Paz Delgado",
+          "nombreFactura": "Hernán Barcos"
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "1.0.0"
+    }
+  }
+}
