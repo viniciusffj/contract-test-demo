@@ -1,0 +1,25 @@
+{
+  "name": "profile-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "contract:verify": "mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@pact-foundation/pact-node": "^4.6.0",
+    "chai": "^3.5.0",
+    "chai-as-promised": "^6.0.0",
+    "express": "^4.14.1",
+    "mocha": "^3.2.0",
+    "pact": "^1.0.0"
+  },
+  "dependencies": {
+    "express": "^4.14.0",
+    "superagent": "^3.3.2"
+  }
+}
