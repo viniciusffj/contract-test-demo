@@ -4,7 +4,7 @@ const path = require('path');
 const expect = chai.expect;
 
 describe('Contract Verification Verification', () => {
-  const contractUrl = 'http://10.71.133.8:2222/pacts/provider/APIPago/consumer/CompreAquiExpress/latest'
+  const contractUrl = 'http://localhost:2222/pacts/provider/APIPago/consumer/CompreAquiExpress/latest'
 
   it('should validate the expectations of Matching Service', function(done) {
     this.timeout(10000);
