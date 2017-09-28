@@ -23,16 +23,13 @@ describe PaymentServiceClient, :pact => true do
           status: 200,
           headers: {'Content-Type' => 'application/json; charset=utf-8'},
           body: {
-            id: 1234,
-            valor: 224.25,
-            direccionFactura: "Estadio Rodrigo Paz Delgado",
-            nombreFactura: "Hernán Barcos"
+            valor: 224.25
           }
         )
     end
 
     it "retorna un pago" do
-      expect(subject.get_payment).to eq(Payment.new(1234, 224.25, 'Estadio Rodrigo Paz Delgado', 'Hernán Barcos'))
+      expect(subject.get_payment).to eq(Payment.new(224.25))
     end
   end
 end

@@ -20,10 +20,7 @@
           "Content-Type": "application/json; charset=utf-8"
         },
         "body": {
-          "id": 1234,
-          "valor": 224.25,
-          "direccionFactura": "Estadio Rodrigo Paz Delgado",
-          "nombreFactura": "Hernán Barcos"
+          "valor": 224.25
         }
       }
     }
